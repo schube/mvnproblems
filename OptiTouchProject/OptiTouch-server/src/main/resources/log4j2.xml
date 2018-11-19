@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] [%C Line: %L] %-5level %logger{36} - %msg%xEx{full}%n" />
+		</Console>
+		<RollingFile name="generalLog" fileName="optitouch.log"
+			filePattern="optitouch-%d{dd-MMM-yyyy}-%i.log" append="true">
+			<Policies>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+			<DefaultRolloverStrategy fileIndex="max"
+				max="10" />
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %class{36} %L %M - %msg%xEx{full}%n" />
+		</RollingFile>
+		<File name="Fmapilog" fileName="fmapi.log" append="true">
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %class{36} %L %M - %msg%xEx%n" />
+		</File>
+
+	</Appenders>
+	<Loggers>
+
+		<logger name="com.schubec.libraries.fmapi4java" level="INFO">
+			<AppenderRef ref="Fmapilog" />
+		</logger>
+
+		<Root level="info">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="generalLog" />
+		</Root>
+	</Loggers>
+
+</Configuration>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='optitouch'>
+  <inherits name="com.google.gwt.user.User" />
+  <inherits name="com.google.gwt.user.theme.clean.Clean" />
+
+  <!-- Other module inherits                                      -->
+  <inherits name="com.google.gwt.logging.Logging"/>
+
+  <!-- com.google.gwt.http.HTTP für HTTP Abfragen (um JSON Files zu lesen) -->
+  <inherits name="com.google.gwt.http.HTTP" />  
+
+  <source path="" />
+
+  <entry-point class='com.schubec.optitouch.client.OptiTouch'/>
+
+</module>

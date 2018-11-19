@@ -4,22 +4,22 @@
 
   <parent>
     <groupId>com.test.optitouch</groupId>
-    <artifactId>OptiTouch</artifactId>
+    <artifactId>optitouch</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>OptiTouch-client</artifactId>
+  <artifactId>optitouch-client</artifactId>
   <packaging>gwt-app</packaging>
 
   <dependencies>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>OptiTouch-shared</artifactId>
+      <artifactId>optitouch-shared</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>OptiTouch-shared</artifactId>
+      <artifactId>optitouch-shared</artifactId>
       <version>${project.version}</version>
       <classifier>sources</classifier>
     </dependency>
@@ -39,7 +39,7 @@
         <groupId>net.ltgt.gwt.maven</groupId>
         <artifactId>gwt-maven-plugin</artifactId>
         <configuration>
-          <moduleName>com.schubec.optitouch.OptiTouch</moduleName>
+          <moduleName>com.schubec.optitouch.optitouch</moduleName>
           <moduleShortName>optitouch</moduleShortName>
         </configuration>
       </plugin>

@@ -86,5 +86,6 @@
     <module>optitouch-client</module>
     <module>optitouch-shared</module>
     <module>optitouch-server</module>
+    <module>distribution-schubec-test</module>
   </modules>
 </project>
